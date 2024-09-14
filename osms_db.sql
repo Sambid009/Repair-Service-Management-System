@@ -1,11 +1,4 @@
--- phpMyAdmin SQL Dump
--- version 4.8.3
--- https://www.phpmyadmin.net/
---
--- Host: 127.0.0.1
--- Generation Time: Oct 20, 2018 at 01:23 PM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -13,20 +6,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
 
---
 -- Database: `osms_db`
---
 
--- --------------------------------------------------------
-
---
--- Table structure for table `adminlogin_tb`
---
 
 CREATE TABLE `adminlogin_tb` (
   `a_login_id` int(11) NOT NULL,
@@ -35,18 +17,15 @@ CREATE TABLE `adminlogin_tb` (
   `a_password` varchar(60) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
--- Dumping data for table `adminlogin_tb`
---
 
 INSERT INTO `adminlogin_tb` (`a_login_id`, `a_name`, `a_email`, `a_password`) VALUES
 (1, 'Admin Kumar', 'admin@gmail.com', '123456');
 
 -- --------------------------------------------------------
 
---
+
 -- Table structure for table `assets_tb`
---
+
 
 CREATE TABLE `assets_tb` (
   `pid` int(11) NOT NULL,
@@ -58,9 +37,9 @@ CREATE TABLE `assets_tb` (
   `psellingcost` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
---
+
 -- Dumping data for table `assets_tb`
---
+
 
 INSERT INTO `assets_tb` (`pid`, `pname`, `pdop`, `pava`, `ptotal`, `poriginalcost`, `psellingcost`) VALUES
 (1, 'Keyboard', '2018-10-03', 3, 10, 400, 500),
@@ -69,7 +48,6 @@ INSERT INTO `assets_tb` (`pid`, `pname`, `pdop`, `pava`, `ptotal`, `poriginalcos
 
 -- --------------------------------------------------------
 
---
 -- Table structure for table `assignwork_tb`
 --
 
@@ -311,6 +289,4 @@ ALTER TABLE `technician_tb`
   MODIFY `empid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
